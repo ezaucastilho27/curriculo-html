@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/curriculobt.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Ezaú Castilho</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top">
+        <div class="container-fluid d-flex justify-content-center">
+            <a class="menuAna mx-3" href="#apresentacao">Ezaú Castilho/a>
+            <a class="menuAna mx-3" href="#sobre">Sobre</a>
+            <a class="menuAna mx-3" href="#formacao">Formação Acadêmica</a>
+            <a class="menuAna mx-3" href="#experiencia">Experiência Profissional</a>
+            <a class="menuAna mx-3" href="#formulario">Formulário de Projetos</a>
+            <a class="menuAna mx-3" href="#endereco">Endereço e Contato</a>
+        </div>
+    </nav>
+    <div id="apresentacao" class="bcgColor scrollMenu">
+        <div class="container-sm">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <img id="foto" src="imgs/932a6876-0627-47ae-8da6-2cdc088b45b5.jpg" title="Ezaú Castilho">
+                </div>
+                <div class="col-8 text-center">
+                    <h1>Ezaú Felipe Castilho Gomes da Silva</h1>
+                    <h3>(Estudante)</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sobre" class="container-sm margin scrollMenu">
+        <h3>Sobre:</h3>
+        <div class="card topBcgSobre my-2"></div>
+        <div class="container-sm">
+            <p><b>Graduando em Análise e Desenvolvimento de Sistemas</b> Faculdade SENAC.
+            </p>
+            <p class="text-center">
+                <a href="https://www.linkedin.com/in/eza%C3%BA-castilho-30b51a212/" target="_blank"><img
+                        src="imgs/official-linkedin-icon-png-12.jpg" alt="linkedin" title="Linkedin" height="50px"></a>
+                <a href="primeiraPag.html"><img src="imgs/portifolioIcon.png" alt="Portifolio" title="Portifolio"
+                        height="50px"></a>
+                <a href=""><img src=""
+                        alt="Currículo" title="Currículo" height="50px"></a>
+            </p>
+        </div>
+    </div>
+    <div id="formacao" class="bcgColor margin scrollMenu">
+        <div class="container-sm">
+            <h3>Formação Acadêmica:</h3>
+            <div class="card topBcgFormacao my-2"></div>
+            <ul>
+                <li>Técnico em Desenvolvimento de Sistemas - <a href="https://qedu.org.br/escola/26179857-escola-tecnica-estadual-porto-digital" target="_blank">ETEPD</a>
+                    - (2021 - 2023)</li>
+                <li>Tecnólogo em Análise e Desenvolvimento de Sistemas - <a
+                        href="https://faculdadesenacpe.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas"
+                        target="_blank">SENAC</a> - (2024 - Em andamento)</li>
+            </ul>
+        </div>
+    </div>
+    <div id="experiencia" class="margin scrollMenu">
+        <div class="container-sm">
+            <h3>Experiência Profissional:</h3>
+            <div class="card topBcgExperiencia my-2"></div>
+            <div class="table-responsive mx-n1 px-1 scrollbar">
+                <table class="table mb-0 border-translucen table-striped">
+                    <thead>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="formulario" class="bcgColor margin scrollMenu">
+        <div class="container-sm">
+            <h3>Formulário de Projetos:</h3>
+            <div class="card topBcgForm my-2"></div>
+            <fieldset>
+                <legend>Dados pessoais:</legend>
+                <form>
+                    <div class="mb-3">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Contato:</legend>
+                <div class="mb-3">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" pattern="\(\d{2}\) \d{5}-\d{4}"
+                        required placeholder="(00) 00000-0000" maxlength="15">
+                </div>
+                <div class="mb-3">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações sobre o projeto:</legend>
+                <div class="mb-3">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="lingua">Língua aplicada no serviço:</label>
+                    <select class="form-control" id="lingua" name="lingua" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="ingles">Inglês</option>
+                        <option value="espanhol">Espanhol</option>
+                        <option value="frances">Francês</option>
+                        <option value="portugues">Português (pt-BR)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="arquivo">Upload de arquivo:</label>
+                    <input type="file" class="form-control-file" id="arquivo" name="arquivo"
+                        accept=".pdf,.doc,.docx,.jpeg,.jpg,.png" required>
+                </div>
+                <div class="mb-3">
+                    <label>Linguagens preferidas:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="linguagem1" name="linguagem"
+                            value="javascript">
+                        <label class="form-check-label" for="linguagem1">JavaScript</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="linguagem2" name="linguagem" value="python">
+                        <label class="form-check-label" for="linguagem2">Python</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="linguagem3" name="linguagem" value="java">
+                        <label class="form-check-label" for="linguagem3">Java</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label>Tipo de banco de dados recomendado:</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="banco1" name="banco" value="sql" required>
+                        <label class="form-check-label" for="banco1">SQL</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="banco2" name="banco" value="nosql">
+                        <label class="form-check-label" for="banco2">NoSQL</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="turno">Turno de preferência para reuniões:</label>
+                    <select class="form-control" id="turno" name="turno" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="horario">Melhor horário sugerido para reuniões:</label>
+                    <input type="time" class="form-control" id="horario" name="horario" required>
+                </div>
+                <div class="mb-3">
+                    <label for="entrega">Previsão de entrega desejada:</label>
+                    <input type="date" class="form-control" id="entrega" name="entrega" required>
+                </div>
+            </fieldset>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div id="endereco" class="container-sm margin scrollMenu">
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Endereço e Contato:</h3>
+                    <div class="card topBcgEnd my-2"></div>
+                    <div class="container-sm">
+                        <address>
+                            <b>Desenvolvido por:</b> <a href="mailto:abgsilva1@gmail.com">Ezaú Castilho/a>.<br>
+                            <b>Visite:</b> <a href=“https://github.com/ezaucastilho27”> Portifólio GitHub</a><br>
+                            <b>Telefone: </b> (81) 99907-4801 <br>
+                            <b>Endereço: </b> Rua visgueiro 63, Alto do Mandú, Recife-PE
+                        </address>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.3934421601955!2d-34.928160828818626!3d-8.020898520043717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19bde91884c5%3A0xd0fa34fe3ba2e5d2!2sR.%20Visgueiro%2C%2063%20-%20Alto%20do%20Mandu%2C%20Recife%20-%20PE%2C%2052071-130!5e0!3m2!1spt-BR!2sbr!4v1729800591867!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <samp>Ezaú Castilho© Copyright 2024 - Todos os direitos reservados</samp>
+</footer>
+
+</html>
